@@ -4,22 +4,63 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 4.5rem;
+}
+
+.hero-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.line {
+  background-color: black;
+  height: 3px;
+  width: 50px;
+}
+
+.line-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
 .hero-container {
   background-image: url(static-tv.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  position: relative;
+  display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   height: 100vh;
 }
 
 .hero-left {
-  grid-column: 1 / 1;
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   color: white;
+  position: absolute;
+  top: 65%;
+  left: 5%;
+}
+
+.hero-left p {
+  font-size: 4rem;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.hero-right {
+  position: absolute;
+  top: 20%;
+  left: 55%;
 }
