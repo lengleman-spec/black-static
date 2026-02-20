@@ -19,6 +19,11 @@ h1 {
   width: 50px;
 }
 
+.line-wrapper {
+  margin-top: 4rem;
+  margin-left: 10rem;
+}
+
 .line-container {
   display: flex;
   align-items: center;
@@ -27,15 +32,22 @@ h1 {
 }
 
 .hero-container {
-  background-image: url(static-tv.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .hero-left {
@@ -44,7 +56,7 @@ h1 {
   gap: 2rem;
   color: white;
   position: absolute;
-  top: 65%;
+  top: 55%;
   left: 5%;
 }
 
@@ -63,4 +75,10 @@ h1 {
   position: absolute;
   top: 20%;
   left: 55%;
+}
+
+/* ---------- MOVIES ---------- */
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
