@@ -85,16 +85,13 @@ h1 {
 
 .hero-right {
   position: absolute;
-  /* top: 10%;
-  left: 55%; */
   top: 30%;
   left: 40%;
 }
 
-/* movies section */
+/* ---------- movies section ----------*/
 .movies-section {
   position: relative;
-  /* changed here */
   height: 100vh;
   overflow: hidden;
 }
