@@ -7,7 +7,6 @@
 }
 
 body {
-  /* background-color: gray; */
   font-family: "Raleway";
 }
 
@@ -133,4 +132,29 @@ h1 {
   text-align: center;
   color: white;
   padding: 2rem;
+}
+
+/* ---------- Movies ---------- */
+.movie-section {
+  background-color: gray;
+}
+.movie-card {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.movie-card-text {
+  font-size: 1.2rem;
+  padding: 2rem;
+  max-width: 600px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.movie-card-text button {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin-top: 1rem;
 }
