@@ -139,15 +139,41 @@ h1 {
   background: linear-gradient(to bottom, #d6d6d6, #bfbfbf);
 }
 
+.movie {
+  position: relative;
+}
+
+.movie-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .movie-card {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 2rem 0;
+  /* padding: 4rem 0; */
+  margin-bottom: 4rem;
   margin-right: 2rem;
   color: white;
   position: relative;
   backdrop-filter: blue(10px);
+  min-width: 300px;
+}
+
+.movie-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.movie-reverse-img {
+  position: relative;
+  top: -150px;
+  left: 50px;
+}
+
+.movie-reverse .movie-card {
+  margin-left: 2rem;
 }
 
 .movie-container img {
@@ -163,7 +189,7 @@ h1 {
   backdrop-filter: blur(6px);
   background: rgba(20, 20, 20, 0.8);
   border-radius: 15px;
-  text-align: center;
+  /* text-align: center; */
   transition: all 0.4s ease;
 }
 
@@ -172,4 +198,10 @@ h1 {
   padding: 1rem 2rem;
   border-radius: 10px;
   margin-top: 1rem;
+}
+
+#genre-paranormal {
+  position: absolute;
+  top: -180px;
+  left: 15px;
 }
