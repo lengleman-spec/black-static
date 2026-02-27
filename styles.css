@@ -181,6 +181,11 @@ h1 {
   flex-direction: row-reverse;
 }
 
+.movie-row.reverse .card-image {
+  left: auto;
+  right: -100px;
+}
+
 .movie-image img {
   width: 300px;
   height: auto;
