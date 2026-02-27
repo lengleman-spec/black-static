@@ -136,6 +136,7 @@ h1 {
 
 /* ---------- Movies ---------- */
 .movie-section {
+  /* padding: 5rem 2rem; */
   background: linear-gradient(to bottom, #d6d6d6, #bfbfbf);
 }
 
@@ -147,39 +148,48 @@ h1 {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-.movie-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  /* padding: 4rem 0; */
-  margin-bottom: 4rem;
-  margin-right: 2rem;
-  color: white;
-  position: relative;
-  backdrop-filter: blue(10px);
-  min-width: 300px;
+.movie-container:first-child {
+  padding-top: 6rem;
 }
 
-.movie-reverse {
+.movie-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.movie-card {
+  position: relative;
+  margin: 0 auto;
+  color: white;
+  backdrop-filter: blue(10px);
+  min-width: 400px;
+}
+
+.card-image {
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  width: 200px;
+  height: auto;
+  z-index: 2;
+}
+
+.movie-row.reverse {
   display: flex;
   flex-direction: row-reverse;
 }
 
-.movie-reverse-img {
-  position: relative;
-  top: -150px;
-  left: 50px;
+.movie-image img {
+  width: 300px;
+  height: auto;
+  display: block;
 }
 
 .movie-reverse .movie-card {
   margin-left: 2rem;
-}
-
-.movie-container img {
-  position: relative;
-  top: 150px;
-  right: 50px;
+  min-width: 400px;
 }
 
 .movie-card-text {
@@ -189,8 +199,8 @@ h1 {
   backdrop-filter: blur(6px);
   background: rgba(20, 20, 20, 0.8);
   border-radius: 15px;
-  /* text-align: center; */
   transition: all 0.4s ease;
+  margin: 3rem 0;
 }
 
 .movie-card-text button {
