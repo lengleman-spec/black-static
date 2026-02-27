@@ -106,10 +106,7 @@ h1 {
 }
 
 .about-section p {
-  /* z-index: 2;
-  position: relative;
-  color: black; */
-  font-size: 1rem;
+  font-size: 1.2rem;
   max-width: 800px;
   margin-bottom: 1.5rem;
 }
@@ -145,9 +142,13 @@ h1 {
 }
 
 .movie-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .movie-container:first-child {
   padding-top: 6rem;
 }
@@ -156,7 +157,12 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 8rem;
+}
+
+.movie-row:nth-of-type(3) .card-image {
+  top: -80px;
+  left: -120px;
 }
 
 .movie-card {
