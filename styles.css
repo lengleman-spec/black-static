@@ -88,7 +88,7 @@ h1 {
   left: 40%;
 }
 
-/* ---------- movies section ----------*/
+/* ---------- about section ----------*/
 .about-section {
   position: relative;
   height: 100vh;
@@ -133,10 +133,27 @@ h1 {
 
 /* ---------- Movies ---------- */
 .movie-section {
-  /* padding: 5rem 2rem; */
   background: linear-gradient(to bottom, #d6d6d6, #bfbfbf);
 }
 
+.section-title {
+  font-size: 2.5rem;
+  text-align: end;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.side-line {
+  width: 80px;
+  height: 3px;
+  background-color: black;
+}
 .movie {
   position: relative;
 }
@@ -147,6 +164,7 @@ h1 {
   gap: 4rem;
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 6rem;
 }
 
 .movie-container:first-child {
@@ -171,8 +189,12 @@ h1 {
   color: white;
   backdrop-filter: blue(10px);
   min-width: 400px;
+  transform: 0.4s ease;
 }
 
+.movie-card:hover {
+  transform: translateY(-10px);
+}
 .card-image {
   position: absolute;
   top: -50px;
@@ -212,6 +234,12 @@ h1 {
   border-radius: 15px;
   transition: all 0.4s ease;
   margin: 3rem 0;
+}
+
+.movie-card-text:hover {
+  box-shadow:
+    0 0 20px rgba(255, 0, 0, 0.3),
+    0 10px 30px rgba(0, 0, 0, 0.8);
 }
 
 .movie-card-text button {
