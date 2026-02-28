@@ -204,7 +204,7 @@ h1 {
   position: relative;
   margin: 0 auto;
   color: white;
-  backdrop-filter: blue(10px);
+  backdrop-filter: blur(10px);
   min-width: 400px;
   transform: 0.4s ease;
 }
@@ -212,6 +212,12 @@ h1 {
 .movie-card:hover {
   transform: translateY(-10px);
 }
+
+.movie-card:hover .card-image {
+  transform: scale(1.1) rotate(-3deg);
+  filter: drop-shadow(0 0 20px red);
+}
+
 .card-image {
   position: absolute;
   top: -50px;
@@ -219,6 +225,9 @@ h1 {
   width: 200px;
   height: auto;
   z-index: 2;
+  transition:
+    transform 0.4s ease,
+    filter 0.4s easse;
 }
 
 .movie-row.reverse {
@@ -264,6 +273,11 @@ h1 {
   padding: 1rem 2rem;
   border-radius: 10px;
   margin-top: 1rem;
+}
+
+.movie-card-text h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 #genre-paranormal {
