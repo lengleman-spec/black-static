@@ -190,6 +190,11 @@ h1 {
   gap: 8rem;
 }
 
+.vhs-row .card-image {
+  top: -130px;
+  right: 120px;
+}
+
 .movie-row:nth-of-type(3) .card-image {
   top: -80px;
   left: -120px;
