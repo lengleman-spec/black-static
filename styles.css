@@ -300,3 +300,23 @@ h1 {
   top: -180px;
   left: 15px;
 }
+
+/* Coming Soon */
+.trailer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.trailer-container {
+  width: 80%;
+  max-width: 900px;
+}
+
+.trailer-container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
